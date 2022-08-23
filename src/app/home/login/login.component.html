@@ -1,0 +1,14 @@
+<h4 class="text-center">Login</h4>
+
+<form class="form mt-4" (ngSubmit)="login()">
+  <div class="form-group">
+    <input class="form-control" placeholder="Nome do usuário" type="text" [(ngModel)]="usuario" name="usuario"/>
+    <!-- ng model é um modelo padrão que um formulário do tipo template cria e instancia, no momento que vc usa um formulário angular tipo template-->
+  </div>
+  <div class="form-group mt-4">
+    <input class="form-control" placeholder="Senha" type="password" [(ngModel)]="senha" name="senha"/>
+  </div>
+  <button type="submit" class="btn btn-primary brn-block mt-4">
+    Login
+  </button>
+</form>
