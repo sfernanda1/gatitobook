@@ -1,5 +1,6 @@
+import { AutenticacaoGuard } from './autenticacao/autenticacao.guard';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, CanLoad } from '@angular/router';
 
 const routes: Routes = [
   {
@@ -12,8 +13,10 @@ const routes: Routes = [
     loadChildren:() => import('./home/home.module').then((m)=> m.HomeModule)
   },
   {
-    path:'animais',
-    loadChildren:() => import('./animais/animais.module').then((m)=> m.AnimaisModule)
+    path: 'animais',
+    loadChildren: () =>
+      import('./animais/animais.module').then((m) => m.AnimaisModule),
+    canLoad: [AutenticacaoGuard],
   },
 ];
 
