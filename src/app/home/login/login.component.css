@@ -1,3 +1,30 @@
-p{
-  margin-top: 16px;
+section{
+  margin-top: 1rem;
 }
+
+h4{
+  font-weight: 600;
+}
+
+input{
+  border-radius: 8px;
+  padding: 0.5rem;
+  border-color: rgb(58, 135, 180);
+}
+
+.input-box{
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+button{
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  padding: 0.25rem 0.8rem;
+  background-color: rgb(182, 220, 242);
+  border-color: rgb(58, 135, 180);
+}
+ button:disabled{
+  background-color: rgb(210, 210, 210)!important;
+
+ }

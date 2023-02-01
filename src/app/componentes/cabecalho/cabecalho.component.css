@@ -1,0 +1,27 @@
+header{
+  background: #0dcaf0;
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, #0dcaf0 50%);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  height: 50px;
+}
+
+i{
+  cursor: pointer;
+}
+
+a{
+  margin-left: 2rem;
+  cursor: pointer;
+}

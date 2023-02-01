@@ -1,0 +1,14 @@
+section{
+  font-family: Arial, Helvetica, sans-serif;
+}
+button{
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  padding: 0.25rem 0.8rem;
+  background-color: rgb(182, 220, 242);
+  border-color: rgb(58, 135, 180);
+}
+ button:disabled{
+  background-color: rgb(210, 210, 210)!important;
+
+ }

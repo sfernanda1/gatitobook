@@ -1,0 +1,55 @@
+ button{
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  padding: 0.25rem 0.8rem;
+  background-color: rgb(182, 220, 242);
+  border-color: rgb(58, 135, 180);
+  margin-right: 0.25rem;
+}
+ button:disabled{
+  background-color: rgb(210, 210, 210)!important;
+
+ }
+
+ .input-img{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .container-novo-animal{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 2rem;
+ }
+
+ .preview-box{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .right-box{
+  margin-left: 5rem;
+ }
+
+ @media (max-width:1024px){
+  .container-novo-animal{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1rem;
+    align-items: center;
+   }
+
+   .right-box{
+    margin-top: 2rem;
+    margin-left: 0;
+   }
+ }
+
+textarea{
+  border-radius: 8px;
+  padding: 0.5rem;
+  border-color: rgb(58, 135, 180);
+}

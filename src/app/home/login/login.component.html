@@ -1,18 +1,20 @@
-<h4 class="text-center">Login</h4>
+<section>
+  <h4>Login</h4>
+  <form  (ngSubmit)="login()" #loginForm="ngForm">
+    <div class="input-box">
+      <input placeholder="Nome do usuário" type="text" [(ngModel)]="usuario" name="usuario" #campoUsuario="ngModel" required />
+      <!-- ng model é um modelo padrão que um formulário do tipo template cria e instancia, no momento que vc usa um formulário angular tipo template-->
+      <app-mensagem *ngIf="campoUsuario.invalid && campoUsuario.touched" mensagem="Usuário obrigatório"></app-mensagem>
+    </div>
+    <div class="input-box">
+      <input  placeholder="Senha" type="password" [(ngModel)]="senha" name="senha" #campoSenha="ngModel" required/>
+      <app-mensagem *ngIf="campoSenha.invalid && campoSenha.touched" mensagem="Senha obrigatória"></app-mensagem>
+    </div>
+    <button type="submit" [disabled]="loginForm.invalid">
+      Login
+    </button>
+  </form>
 
-<form class="form mt-4" (ngSubmit)="login()" #loginForm="ngForm">
-  <div class="form-group">
-    <input class="form-control" placeholder="Nome do usuário" type="text" [(ngModel)]="usuario" name="usuario" #campoUsuario="ngModel" required />
-    <!-- ng model é um modelo padrão que um formulário do tipo template cria e instancia, no momento que vc usa um formulário angular tipo template-->
-    <app-mensagem *ngIf="campoUsuario.invalid && campoUsuario.touched" mensagem="Usuário obrigatório"></app-mensagem>
-  </div>
-  <div class="form-group mt-4">
-    <input class="form-control" placeholder="Senha" type="password" [(ngModel)]="senha" name="senha" #campoSenha="ngModel" required/>
-    <app-mensagem *ngIf="campoSenha.invalid && campoSenha.touched" mensagem="Senha obrigatória"></app-mensagem>
-  </div>
-  <button type="submit" class="btn btn-primary brn-block mt-4" [disabled]="loginForm.invalid">
-    Login
-  </button>
-</form>
+  <p>Não é um usuário? <a [routerLink]="['novousuario']">Cadastre-se</a></p>
 
-<p>Não é um usuário? <a [routerLink]="['novousuario']">Cadastre-se</a></p>
+</section>

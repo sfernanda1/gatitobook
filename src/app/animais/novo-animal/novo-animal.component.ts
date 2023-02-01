@@ -28,7 +28,7 @@ export class NovoAnimalComponent implements OnInit {
   }
 
   upload(){
-    const allowComments = this.formularioAnimal.get('allowComents')?.value ?? false;
+    const allowComments = this.formularioAnimal.get('allowComments')?.value ?? false;
     const description = this.formularioAnimal.get('description')?.value ?? '';
     this.animaisService.upload(description, allowComments, this.file).pipe(
       finalize(()=>this.router.navigate(['animais']))

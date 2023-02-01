@@ -1,11 +1,14 @@
-<header class="sticky-top">
-  <nav class="navbar navbar-light bg-white">
-    <i class="fa fa-bars mr-2" (click)="menu.abreMenu()" (keyup.space)="menu.abreMenu()">
-    </i>
-    <a class="navbar-brand">Gatito Book</a>
+<header >
+  <nav>
+    <div>
+      <i class="fa fa-bars mr-2" (click)="menu.abreMenu()" (keyup.space)="menu.abreMenu()">
+      </i>
+      <a>Gatito Book</a>
+    </div>
+
 
     <app-menu #menu>
-      <ul class="list-unstyled">
+      <ul>
         <li>
           <a [routerLink]="['animais', 'novo']">Novo animal</a>
         </li>
