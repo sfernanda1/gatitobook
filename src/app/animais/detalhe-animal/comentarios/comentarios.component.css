@@ -1,4 +1,24 @@
+section{
+  margin-left: 2rem;
+}
+
 .comentario-list{
   height: 50vh;
   overflow-y: auto;
+
+}
+
+textarea{
+  border-radius: 8px;
+  padding: 0.5rem;
+  border-color: rgb(58, 135, 180);
+}
+
+li{
+  margin-top: 2rem;
+  border-top:1px solid rgba(58, 135, 180, 0.222);
+}
+
+.name-user{
+  font-weight: 700;
 }
